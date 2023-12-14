@@ -8,7 +8,7 @@ function Contact() {
     >
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
         <div className="pb-8">
-          <p className="text-6xl font-bold inline border-b-4 border-blue-950 text-yellow-400">Contact</p>
+          <p className="text-5xl font-bold inline border-b-4 border-blue-950 text-yellow-400">Contact</p>
           <p className="py-6">Submit the form below so we can get in touch</p>
         </div>
         <div className="flex justify-center items-center">

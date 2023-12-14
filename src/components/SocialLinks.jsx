@@ -6,19 +6,6 @@ import { BsFillPersonFill } from "react-icons/bs";
 
 const SocialLinks = () => {
   const links = [
-    /*  {
-      id: 1,
-      child: (
-        <>
-          <FaLinkedin size={30} />
-          <span className="opacity-0 group-hover:opacity-100 absolute bottom-0 text-xs">
-            LinkedIn
-          </span>
-        </>
-      ),
-      href: "https://www.linkedin.com/in/carlos-sánchez-núñez/",
-      style: "rounded-tr-md",
-    },*/
     {
       id: 1,
       child: (

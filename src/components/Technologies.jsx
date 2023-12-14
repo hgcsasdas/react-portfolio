@@ -95,7 +95,7 @@ function Technologies() {
     >
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div>
-          <p className="text-6xl font-bold inline border-b-4 border-blue-950">
+          <p className="text-5xl font-bold inline border-b-4 border-blue-950 text-yellow-400">
             Technologies
           </p>
           <p className="py-6">Technologies I know</p>

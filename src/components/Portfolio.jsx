@@ -34,7 +34,7 @@ const Portfolio = () => {
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
-          <p className="text-6xl font-bold inline border-b-4 border-blue-950 text-yellow-400">
+          <p className="text-5xl font-bold inline border-b-4 border-blue-950 text-yellow-400">
             Portfolio
           </p>
           <p className="py-6">Here are some of my projects</p>
@@ -51,13 +51,18 @@ const Portfolio = () => {
               <div className="flex items-center justify-center">
                 {hasLink ? (
                   <>
-                    {/* <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 bg-yellow-500">
+                    <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 bg-yellow-500">
                       Demo
-                    </button> */}
+                    </button>
                   </>
                 ) : (
                   <>
-                    <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"></button>
+                    <button
+                      className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 bg-orange-400"
+                      disabled
+                    >
+                      Demo
+                    </button>
                   </>
                 )}
 

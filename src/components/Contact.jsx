@@ -15,10 +15,10 @@ function Contact() {
         </div>
         <div className="flex justify-center items-center">
           <form
-            name="contact"
+            name="contact-form"
             method="POST"
             className="flex flex-col w-full md:w-1/2"
-            netlify
+            data-netlify="true"
           >
             {/* Tus campos de formulario aquí */}
             <input

@@ -1,4 +1,5 @@
 import React from "react";
+
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import github from "../assets/github.png";
@@ -106,7 +107,7 @@ function Technologies() {
               key={id}
               className={`shadow-lg hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
             >
-              <img src={src} alt="" className="w-20 mx-auto" />
+              <img src={src} alt="" className="w-20 mx-auto" loading="lazy"/>
               <p className="mt-4">{title}</p>
             </div>
           ))}

@@ -8,7 +8,7 @@ const Home = () => {
       name="home"
       className="h-screen w-full bg-gradient-to-b from-blue-600 via-blue-600 to-blue-900 text-blue-100"
     >
-      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:px-0 md:flex-row">
+      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:px-0 md:flex-row md:py-3">
         <div className="flex flex-col justify-center h-full">
           <h2 className="text-4xl sm:text-7xl font-bold text-blue-100">
             I'm a Full Stack Developer

@@ -1,9 +1,11 @@
 import React from "react";
 import SecondHandMarket from "../assets/portfolio/SecondHandMarket.png";
 import AVPEPE from "../assets/portfolio/AVPEPE.jpeg";
-//importar imagenes para el portfolio
+import { useTranslation } from "react-i18next";
 
 const Portfolio = () => {
+  const [t] = useTranslation("global");
+
   const portfolio = [
     {
       id: 1,
@@ -39,16 +41,18 @@ const Portfolio = () => {
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <p className="text-5xl font-bold inline border-b-4 border-blue-950 text-yellow-400">
-            Portfolio
+            {t("portfolio.title")}
           </p>
-          <p className="py-6">Here are some of my projects</p>
+          <p className="py-6"> {t("portfolio.content")} </p>
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
           {portfolio.map(({ id, src, hasLink, gitRepo, name }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <div className="bg-cyand-200">
-                <p className="flex justify-center text-xl duration-200 hover:scale-105 ">{name}</p>
+                <p className="flex justify-center text-xl duration-200 hover:scale-105 ">
+                  {name}
+                </p>
               </div>
 
               <img

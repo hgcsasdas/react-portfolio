@@ -1,0 +1,52 @@
+{
+  "nav": {
+    "1": "home",
+    "2": "about",
+    "3": "portfolio",
+    "4": "technologies",
+    "6": "contact",
+    "navigation-routes": {
+      "1": "home",
+      "2": "about",
+      "3": "portfolio",
+      "4": "technologies",
+      "6": "contact"
+    },
+    "dropdown-lng": "Language"
+  },
+
+  "home": {
+    "title": "Hi, I'm a Full Stack Developer",
+    "description": " I'm Carlos, a recent graduate with a background in Multiplatform Application Development (DAM) and Web Application Development (DAW). My academic journey has instilled in me a solid foundation in software development. Eager to contribute my skills to dynamic projects, I bring adaptability and a commitment to ongoing learning."
+  },
+
+  "about": {
+    "title": "About",
+    "content": "👋🏻 Hi everyone! I'm Carlos, a recent graduate with a focus on Multiplatform Application Development (DAM) and Web Application Development (DAW). As a junior programmer, my experiences as an intern have equipped me with practical skills in software development. I engage with various technologies and languages, exploring Java, PHP, JavaScript, HTML, CSS, SQL, and Git, along with frameworks like Spring Boot, Tailwind, Angular, and React. I also delve into emerging technologies such as Flutter, Kotlin Jetpack Compose, and python.",
+    "content2": "🧪 My approach centers on creating high-quality solutions to boost project success. I stay updated on technological trends, committed to continuous learning for skill enhancement. Recognized for adaptability, teamwork, and efficient problem-solving, I embrace new technologies with a proactive mindset. Open to opportunities for professional growth and eager to contribute to exciting projects"
+  },
+
+  "portfolio": {
+    "title": "Portfolio",
+    "content": "Here are some of my projects"
+  },
+
+  "technologies": {
+    "title": "Technologies",
+    "content": "Technologies I know"
+  },
+  
+  "contact": {
+    "title": "Contact",
+    "content": "Submit the form below so we can get in touch",
+    "formPlaceholderName": "Enter your name",
+    "formPlaceholderEmail": "Enter your email",
+    "formPlaceholderMessage": "Enter your message",
+    "submitButton": "Let's talk"
+  },
+
+  "footer": {
+    "email": "Email: hgc.csn@gmail.com",
+    "phone": "Phone: 🇪🇸 +34 643 545 314"
+  }
+}

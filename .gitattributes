@@ -1,0 +1,6 @@
+# Configuración para saltos de línea
+* text=auto
+
+# Excepciones para archivos binarios
+*.png binary
+*.jpg binary

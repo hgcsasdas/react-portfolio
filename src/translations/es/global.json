@@ -1,0 +1,52 @@
+{
+  "nav": {
+    "1": "inicio",
+    "2": "acerca",
+    "3": "portafolio",
+    "4": "tecnologias",
+    "6": "contacto",
+    "navigation-routes": {
+      "1": "home",
+      "2": "about",
+      "3": "portfolio",
+      "4": "technologies",
+      "6": "contact"
+    },
+    "dropdown-lng": "Idioma"
+  },
+
+  "home": {
+    "title": "Hola, soy un Desarrollador Full Stack",
+    "description": "Soy Carlos, un recién graduado con experiencia en Desarrollo de Aplicaciones Multiplataforma (DAM) y Desarrollo de Aplicaciones Web (DAW). Mi trayectoria académica me ha proporcionado una sólida base en el desarrollo de software. Ansioso por aportar mis habilidades a proyectos dinámicos, traigo adaptabilidad y un compromiso con el aprendizaje continuo."
+  },
+
+  "about": {
+    "title": "Acerca de",
+    "content": "👋🏻 ¡Hola a todos! Soy Carlos, un recién graduado con enfoque en Desarrollo de Aplicaciones Multiplataforma (DAM) y Desarrollo de Aplicaciones Web (DAW). Como programador junior, mis experiencias como becario me han dotado de habilidades prácticas en el desarrollo de software. Me involucro con diversas tecnologías e lenguajes, explorando Java, PHP, JavaScript, HTML, CSS, SQL y Git, junto con frameworks como Spring Boot, Tailwind, Angular y React. También indago en tecnologías emergentes como Flutter, Kotlin Jetpack Compose y Python.",
+    "content2": "🧪 Mi enfoque se centra en crear soluciones de alta calidad para impulsar el éxito del proyecto. Me mantengo actualizado sobre las tendencias tecnológicas, comprometido con el aprendizaje continuo para mejorar mis habilidades. Reconocido por la adaptabilidad, el trabajo en equipo y la resolución eficiente de problemas, adopto nuevas tecnologías con una mentalidad proactiva. Abierto a oportunidades de crecimiento profesional y ansioso por contribuir a proyectos emocionantes."
+  },
+
+  "portfolio": {
+    "title": "Portafolio",
+    "content": "Aquí tienes algunos de mis proyectos"
+  },
+
+  "technologies": {
+    "title": "Tecnologias",
+    "content": "Tecnologias que utilizo"
+  },
+  
+  "contact": {
+    "title": "Contacto",
+    "content": "Rellena el formulario para ponernos en contacto",
+    "formPlaceholderName": "Ingresa tu nombre",
+    "formPlaceholderEmail": "Ingresa tu correo electrónico",
+    "formPlaceholderMessage": "Ingresa tu mensaje",
+    "submitButton": "Hablemos"
+  },
+
+  "footer": {
+    "email": "Correo electrónico: hgc.csn@gmail.com",
+    "phone": "Teléfono: 🇪🇸 +34 643 545 314"
+  }
+}

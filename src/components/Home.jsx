@@ -2,7 +2,12 @@ import React from "react";
 import fotoImage from "../assets/portfolio/foto_final_px_art.png";
 import { FaCircleArrowRight } from "react-icons/fa6";
 import { Link } from "react-scroll";
+
+import { useTranslation } from "react-i18next";
+
 const Home = () => {
+  const [t] = useTranslation("global");
+
   return (
     <div
       name="home"
@@ -11,15 +16,9 @@ const Home = () => {
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:px-0 md:flex-row md:py-3">
         <div className="flex flex-col justify-center h-full">
           <h2 className="text-4xl sm:text-7xl font-bold text-blue-100">
-            I'm a Full Stack Developer
+            {t("home.title")}
           </h2>
-          <p className="py-4">
-            I'm Carlos, a recent graduate with a background in Multiplatform
-            Application Development (DAM) and Web Application Development
-            (DAW). My academic journey has instilled in me a solid foundation
-            in software development. Eager to contribute my skills to dynamic
-            projects, I bring adaptability and a commitment to ongoing learning.
-          </p>
+          <p className="py-4">{t("home.description")}</p>
 
           <div>
             <Link
@@ -28,7 +27,7 @@ const Home = () => {
               duration={500}
               className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-yellow-500 to-yellow-300 cursor-pointer"
             >
-              Portfolio
+              {t("portfolio.title")}
               <span className="group-hover:rotate-90 duration-300 ml-1">
                 <FaCircleArrowRight size={20} />
               </span>

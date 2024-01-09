@@ -1,52 +1,78 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-scroll";
+import { Link, Events } from "react-scroll";
 import DropdownComponent from "./DropdownComponent";
 import { useTranslation } from "react-i18next";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
-  const [currentSection, setCurrentSection] = useState(null);
+  const [currentSection, setCurrentSection] = useState(1);
   const [t] = useTranslation("global");
 
-  const links = [
-    {
-      id: 1,
-      link: t("nav.navigation-routes.1"),
-      title: t("nav.1"),
-    },
-    {
-      id: 2,
-      link: t("nav.navigation-routes.2"),
-      title: t("nav.2"),
-    },
-    {
-      id: 3,
-      link: t("nav.navigation-routes.3"),
-      title: t("nav.3"),
-    },
-    {
-      id: 4,
-      link: t("nav.navigation-routes.4"),
-      title: t("nav.4"),
-    },
-    {
-      id: 6,
-      link: t("nav.navigation-routes.6"),
-      title: t("nav.6"),
-    },
-  ];
+  const links = useMemo(
+    () => [
+      {
+        id: 0,
+        link: t("nav.navigation-routes.0"),
+        title: t("nav.0"),
+      },
+      {
+        id: 1,
+        link: t("nav.navigation-routes.1"),
+        title: t("nav.1"),
+      },
+      {
+        id: 2,
+        link: t("nav.navigation-routes.2"),
+        title: t("nav.2"),
+      },
+      {
+        id: 3,
+        link: t("nav.navigation-routes.3"),
+        title: t("nav.3"),
+      },
+      {
+        id: 4,
+        link: t("nav.navigation-routes.4"),
+        title: t("nav.4"),
+      },
+    ],
+    [t]
+  );
 
-  const handleLinkClick = (id, link) => {
-    setCurrentSection(id);
-    setNav(false);
-    // Puedes agregar lógica adicional aquí si es necesario
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const newSection = Math.floor(
+        (scrollPosition + windowHeight / 2) / windowHeight
+      );
 
-  const navLinkClass = (id) =>
+      const sections = links.map((link) => link.link);
+
+      const sectionName = sections[newSection];
+
+      setCurrentSection(sectionName);
+    };
+
+    Events.scrollEvent.register("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      Events.scrollEvent.remove("scroll", handleScroll);
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [links]);
+
+  const navLinkClass = (section) =>
     `px-4 cursor-pointer capitalize font-bold text-blue-100 hover:scale-105 duration-200 ${
-      currentSection === id ? "border-b-2 border-yellow-500" : ""
+      currentSection === section ? "border-b-2 border-yellow-500" : ""
     }`;
+
+  const handleLinkClick = (link) => {
+    setCurrentSection(link);
+    setNav(false);
+  };
 
   return (
     <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-blue-600 fixed">
@@ -55,14 +81,15 @@ const NavBar = () => {
       </div>
 
       <div>
-        <ul className="hidden flex justify-between items-center md:flex">
+        <ul className="flex justify-between items-center md:flex">
           {links.map(({ id, link, title }) => (
-            <li key={id} className={navLinkClass(id)}>
+            
+            <li key={id} className={navLinkClass(link)}>
               <Link
                 to={link}
                 smooth={true}
                 duration={400}
-                onClick={() => handleLinkClick(id, link)}
+                onClick={() => handleLinkClick(link)}
               >
                 {title}
               </Link>
@@ -84,13 +111,16 @@ const NavBar = () => {
       {nav && (
         <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-blue-600 to-blue-900 text-blue-100 ">
           {links.map(({ id, link, title }) => (
-            <li key={id} className="px-4 cursor-pointer capitalize py-6 text-4xl font-bold">
+            <li
+              key={id}
+              className="px-4 cursor-pointer capitalize py-6 text-4xl font-bold"
+            >
               <Link
                 onClick={() => handleLinkClick(id, link)}
                 to={link}
                 smooth={true}
                 duration={400}
-                className={navLinkClass(id)}
+                className={navLinkClass(link)}
               >
                 {title}
               </Link>

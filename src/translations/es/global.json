@@ -1,22 +1,22 @@
 {
   "nav": {
-    "1": "inicio",
-    "2": "acerca",
-    "3": "portafolio",
-    "4": "tecnologias",
-    "6": "contacto",
+    "0": "inicio",
+    "1": "acerca",
+    "2": "portafolio",
+    "3": "tecnologias",
+    "4": "contacto",
     "navigation-routes": {
-      "1": "home",
-      "2": "about",
-      "3": "portfolio",
-      "4": "technologies",
-      "6": "contact"
+      "0": "home",
+      "1": "about",
+      "2": "portfolio",
+      "3": "technologies",
+      "4": "contact"
     },
     "dropdown-lng": "Idioma"
   },
 
   "home": {
-    "title": "Hola, soy un Desarrollador Full Stack",
+    "title": "Hola! soy Carlos, Desarrollador Full Stack",
     "description": "Soy Carlos, un recién graduado con experiencia en Desarrollo de Aplicaciones Multiplataforma (DAM) y Desarrollo de Aplicaciones Web (DAW). Mi trayectoria académica me ha proporcionado una sólida base en el desarrollo de software. Ansioso por aportar mis habilidades a proyectos dinámicos, traigo adaptabilidad y un compromiso con el aprendizaje continuo."
   },
 

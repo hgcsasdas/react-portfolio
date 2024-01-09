@@ -1,22 +1,22 @@
 {
   "nav": {
-    "1": "home",
-    "2": "about",
-    "3": "portfolio",
-    "4": "technologies",
-    "6": "contact",
+    "0": "home",
+    "1": "about",
+    "2": "portfolio",
+    "3": "technologies",
+    "4": "contact",
     "navigation-routes": {
-      "1": "home",
-      "2": "about",
-      "3": "portfolio",
-      "4": "technologies",
-      "6": "contact"
+      "0": "home",
+      "1": "about",
+      "2": "portfolio",
+      "3": "technologies",
+      "4": "contact"
     },
     "dropdown-lng": "Language"
   },
 
   "home": {
-    "title": "Hi, I'm a Full Stack Developer",
+    "title": "Hi, I'm Carlos, Full Stack Developer",
     "description": " I'm Carlos, a recent graduate with a background in Multiplatform Application Development (DAM) and Web Application Development (DAW). My academic journey has instilled in me a solid foundation in software development. Eager to contribute my skills to dynamic projects, I bring adaptability and a commitment to ongoing learning."
   },
 

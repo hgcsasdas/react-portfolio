@@ -9,12 +9,13 @@ import { I18nextProvider } from "react-i18next";
 import global_es from "./translations/es/global.json";
 import global_en from "./translations/en/global.json";
 
+const userLanguage = navigator.language.toLowerCase();
+
+const languageToUse = userLanguage.startsWith("es") ? "es" : "en";
 
 i18next.init({
   interpolation: { escape: false },
-
-  lng: "es",
-
+  lng: languageToUse,
   resources: {
     es: {
       global: global_es,
@@ -33,4 +34,3 @@ root.render(
     </I18nextProvider>
   </React.StrictMode>
 );
-

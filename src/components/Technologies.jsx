@@ -95,7 +95,7 @@ function Technologies() {
   return (
     <div
       name="technologies"
-      className="h-screen w-full bg-gradient-to-b from-blue-900 to-blue-600 text-blue-200"
+      className="w-full bg-gradient-to-b from-blue-900 to-blue-600 text-blue-200"
     >
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div>

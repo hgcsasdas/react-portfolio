@@ -81,7 +81,7 @@ const NavBar = () => {
       </div>
 
       <div>
-        <ul className="flex justify-between items-center md:flex">
+        <ul className="hidden justify-between items-center md:flex">
           {links.map(({ id, link, title }) => (
             
             <li key={id} className={navLinkClass(link)}>

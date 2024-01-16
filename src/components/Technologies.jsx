@@ -20,9 +20,10 @@ function Technologies() {
   const technologies = [
     {
       id: 1,
-      src: html,
-      title: "HTML",
-      style: "shadow-orange-500",
+      src: springBoot,
+      title: "Spring Boot 5",
+      style: "shadow-green-400",
+
     },
     {
       id: 2,
@@ -62,9 +63,9 @@ function Technologies() {
     },
     {
       id: 8,
-      src: springBoot,
-      title: "Spring Boot 5",
-      style: "shadow-green-400",
+      src: html,
+      title: "HTML",
+      style: "shadow-orange-500",
     },
     {
       id: 9,

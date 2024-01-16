@@ -1,12 +1,31 @@
-import React from "react";
 import fotoImage from "../assets/portfolio/foto_final_px_art.png";
 import { FaCircleArrowRight } from "react-icons/fa6";
 import { Link } from "react-scroll";
+import React, { useState, useEffect } from "react";
 
 import { useTranslation } from "react-i18next";
 
 const Home = () => {
   const [t] = useTranslation("global");
+  const [screenHeight, setScreenHeight] = useState(window.innerHeight);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenHeight(window.innerHeight);
+    };
+
+    console.log("screenHeight", screenHeight);
+
+    // Agrega el event listener para actualizar la altura de la pantalla cuando cambie
+    window.addEventListener("resize", handleResize);
+
+    // Limpia el event listener cuando el componente se desmonta
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const headerClass = screenHeight < 670 ? "pt-44" : "";
 
   return (
     <div
@@ -15,7 +34,7 @@ const Home = () => {
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:px-0 md:flex-row md:py-3">
         <div className="flex flex-col justify-center h-full">
-          <h2 className="text-4xl sm:text-7xl font-bold text-blue-100">
+          <h2 className={`text-4xl sm:text-7xl font-bold text-blue-100 ${headerClass}`}>
             {t("home.title")}
           </h2>
           <p className="py-4">{t("home.description")}</p>

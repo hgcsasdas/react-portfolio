@@ -23,7 +23,7 @@ const Home = () => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []);
+  }, [screenHeight]); // Agrega screenHeight al arreglo de dependencias
 
   const headerClass = screenHeight < 670 ? "pt-44" : "";
 

@@ -14,27 +14,23 @@ const Home = () => {
       setScreenHeight(window.innerHeight);
     };
 
-    console.log("screenHeight", screenHeight);
-
-    // Agrega el event listener para actualizar la altura de la pantalla cuando cambie
     window.addEventListener("resize", handleResize);
 
-    // Limpia el event listener cuando el componente se desmonta
     return () => {
       window.removeEventListener("resize", handleResize);
     };
   }, [screenHeight]); // Agrega screenHeight al arreglo de dependencias
 
-  const headerClass = screenHeight < 670 ? "pt-44" : "";
+  const headerClass = screenHeight < 768 ? "pt-44" : "";
 
   return (
     <div
       name="home"
-      className="h-screen w-full bg-gradient-to-b from-blue-600 via-blue-600 to-blue-900 text-blue-100"
+      className={`h-screen w-full bg-gradient-to-b from-blue-600 via-blue-600 to-blue-900 md:pt-44 text-blue-100 ${headerClass} `}
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:px-0 md:flex-row md:py-3">
         <div className="flex flex-col justify-center h-full">
-          <h2 className={`text-4xl sm:text-7xl font-bold text-blue-100 ${headerClass}`}>
+          <h2 className={`text-4xl sm:text-7xl font-bold text-blue-100 `}>
             {t("home.title")}
           </h2>
           <p className="py-4">{t("home.description")}</p>

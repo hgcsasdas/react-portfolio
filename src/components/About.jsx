@@ -7,7 +7,7 @@ function About() {
   return (
     <div
       name="about"
-      className="bg-gradient-to-b from-blue-900 to-blue-600 text-blue-200 w-full md:h-screen"
+      className="bg-gradient-to-b  from-blue-900 to-blue-600 text-blue-200 w-full md:h-screen md:mt-44 h-full"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8 ">

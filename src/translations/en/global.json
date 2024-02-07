@@ -28,14 +28,44 @@
 
   "portfolio": {
     "title": "Portfolio",
-    "content": "Here are some of my projects"
+    "content": "Here are some of my projects",
+    "projects": {
+      "urlShort": {
+        "title": "Url Short",
+        "explanation": "Short URL Backend provides services to shorten links and generate associated QR codes. It utilizes Java 11 and Spring Boot, with configurations for secret key and algorithm. Contributions to the project are welcome under the MIT License.",
+        "demoLink": "https://csn-s-url.netlify.app",
+        "gitBackendRepository": "https://github.com/hgcsasdas/short-url-backend",
+        "gitFrontendRepository": "https://github.com/hgcsasdas/short-url-front",
+        "technologies": {
+          "angular": "Angular",
+          "springBoot": "Spring Boot",
+          "supabase": "Supabase"
+        }
+      },
+      "virtualAssistantPepe": {
+        "title": "Asistente Virtual PEPE",
+        "explanation": "Virtual assistant for task management with various functionalities such as sending messages, searching on Google, or creating summaries.",
+        "gitBackendRepository": "https://github.com/hgcsasdas/AVPEPE",
+        "technologies": {
+          "python": "Python"
+        }
+      },
+      "secondHandMarketSpring": {
+        "title": "Second Hand Market Spring",
+        "explanation": "Final project of the Spring Boot 5 course.",
+        "gitBackendRepository": "https://github.com/hgcsasdas/Spring_boot_course",
+        "technologies": {
+          "springBoot": "Spring Boot"
+        }
+      }
+    }
   },
 
   "technologies": {
     "title": "Technologies",
     "content": "Technologies I know"
   },
-  
+
   "contact": {
     "title": "Contact",
     "content": "If you want to get in contact with me fil the form :)",

@@ -1,34 +1,18 @@
 import fotoImage from "../assets/portfolio/foto_final_px_art.png";
 import { FaCircleArrowRight } from "react-icons/fa6";
 import { Link } from "react-scroll";
-import React, { useState, useEffect } from "react";
 
 import { useTranslation } from "react-i18next";
 
 const Home = () => {
   const [t] = useTranslation("global");
-  const [screenHeight, setScreenHeight] = useState(window.innerHeight);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setScreenHeight(window.innerHeight);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, [screenHeight]); // Agrega screenHeight al arreglo de dependencias
-
-  const headerClass = screenHeight < 768 ? "pt-44" : "";
 
   return (
     <div
       name="home"
-      className={`h-screen w-full bg-gradient-to-b from-blue-600 via-blue-600 to-blue-900 md:pt-44 text-blue-100 ${headerClass} `}
-    >
-      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:px-0 md:flex-row md:py-3">
+      className={`h-screen w-full bg-gradient-to-b from-blue-600 via-blue-600 to-blue-900 max-sm:pt-44 text-blue-100`}
+      >
+      <div className="flex flex-col items-center justify-center h-full max-w-screen-lg px-4 mx-auto md:px-0 md:flex-row md:py-3">
         <div className="flex flex-col justify-center h-full">
           <h2 className={`text-4xl sm:text-7xl font-bold text-blue-100 `}>
             {t("home.title")}
@@ -40,10 +24,10 @@ const Home = () => {
               to="portfolio"
               smooth
               duration={500}
-              className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-yellow-500 to-yellow-300 cursor-pointer"
+              className="flex items-center px-6 py-3 my-2 text-white rounded-md cursor-pointer group w-fit bg-gradient-to-r from-yellow-500 to-yellow-300"
             >
               {t("portfolio.title")}
-              <span className="group-hover:rotate-90 duration-300 ml-1">
+              <span className="ml-1 duration-300 group-hover:rotate-90">
                 <FaCircleArrowRight size={20} />
               </span>
             </Link>
@@ -53,7 +37,7 @@ const Home = () => {
           <img
             src={fotoImage}
             alt="my profile"
-            className="rounded-2xl mx-auto w-2/3 md:w-full"
+            className="w-2/3 mx-auto rounded-2xl md:w-full"
           />
         </div>
       </div>

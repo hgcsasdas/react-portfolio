@@ -42,7 +42,7 @@ const DropdownComponent = () => {
           <Dropdown.Item
             key={option.code}
             onClick={() => changeLanguage(option.code)}
-            className="flex items-center text-blue-100 hover:text-white"
+            className="flex items-center text-blue-200 hover:text-blue-500"
           >
             {option.flag}
             {option.label}

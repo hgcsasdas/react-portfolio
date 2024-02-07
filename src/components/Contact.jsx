@@ -63,7 +63,7 @@ function Contact() {
   return (
     <div
       name="contact"
-      className="w-full h-screen bg-gradient-to-b from-blue-600 to-blue-900 text-blue-200 p-4"
+      className="w-full h-screen bg-gradient-to-b from-blue-600 to-blue-900 text-blue-200 max-sm:pt-44 p-4"
     >
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
         <div className="pb-8">

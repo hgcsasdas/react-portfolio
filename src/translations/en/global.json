@@ -42,6 +42,14 @@
           "supabase": "Supabase"
         }
       },
+      "ireneWeb": {
+        "title": "Web Irene-Concept",
+        "explanation": "Website created for a client in which to show her personal work.",
+        "demoLink": "https://irene-concept.netlify.app",
+        "technologies": {
+          "python": "React"
+        }
+      },
       "virtualAssistantPepe": {
         "title": "Asistente Virtual PEPE",
         "explanation": "Virtual assistant for task management with various functionalities such as sending messages, searching on Google, or creating summaries.",

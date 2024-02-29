@@ -3,6 +3,8 @@ import PortfolioItem from "./portfolio/PortfolioItem";
 import ShortUrl from "../assets/portfolio/ShortUrl.png";
 import AVPEPE from "../assets/portfolio/VirtualAssistant.png";
 import SecondHandMarket from "../assets/portfolio/SecondHandMarket.png";
+import IreneWeb from "../assets/portfolio/IreneWeb.png";
+
 import { useTranslation } from "react-i18next";
 
 const Portfolio = () => {
@@ -10,8 +12,7 @@ const Portfolio = () => {
 
   // Función para obtener la imagen del proyecto
   const getProjectImage = (projectId) => {
-    // Implementa la lógica para obtener la imagen correspondiente a projectId
-    // Puedes usar un mapa o una lógica similar
+    
     switch (projectId) {
       case "urlShort":
         return ShortUrl;
@@ -19,7 +20,8 @@ const Portfolio = () => {
         return AVPEPE;
       case "secondHandMarketSpring":
         return SecondHandMarket;
-      // Agrega más casos según sea necesario
+      case "ireneWeb":
+        return IreneWeb;
       default:
         return null;
     }

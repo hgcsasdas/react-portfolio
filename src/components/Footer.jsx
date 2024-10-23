@@ -6,9 +6,7 @@ const Footer = () => {
       <div className="text-left">
         <p>Email: <a href="mailto:hgc.csn@gmail.com">hgc.csn@gmail.com</a>  or <a href="mailto:carl.san.nu@gmail.com">carl.san.nu@gmail.com</a> </p>
       </div>
-      <div className="text-ellipsis">
-        <p>Phone: 🇪🇸 +34 643 545 314</p>
-      </div>
+      
     </footer>
   );
 };
